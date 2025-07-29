@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYou';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { CartContext } from './Context/CartContext';
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
         <Route path="/kassa" element={<Checkout />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/tack" element={<ThankYou />} />
+        
+        <CartContext.Provider value={{ cart: [], setCart: () => {} }}>
+      <App />
+        </CartContext.Provider>
       </Routes>
     </main>
     <Footer />

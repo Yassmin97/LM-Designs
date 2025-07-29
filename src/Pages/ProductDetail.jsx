@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom';
-import { Products } from '../Data/Products';
+import produkter from '../Data/produkter';
 import ProductForm from '../components/ProductForm';
 
 const ProductDetail = () => {
   const { slug } = useParams();
-  const product = Products.find(p => p.slug === slug);
+  const product = produkter.find(p => p.slug === slug);
 
   if (!product) return <div className="p-6">Produkten hittades inte.</div>;
 

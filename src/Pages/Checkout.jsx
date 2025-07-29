@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../Context/CartContext';
 import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {

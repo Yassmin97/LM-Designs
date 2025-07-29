@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../Context/CartContext';
 
 const ProductForm = ({ product }) => {
   const [customText, setCustomText] = useState('');
