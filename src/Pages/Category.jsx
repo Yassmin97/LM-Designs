@@ -3,7 +3,7 @@ import produkter from '../Data/produkter';
 import ProductCard from '../Components/ProductCard';
 
 const Category = () => {
-    const {kategori} = useParams();
+    const { kategori } = useParams();
     const filtered = produkter.filter(p => p.category === kategori);
 
     return(

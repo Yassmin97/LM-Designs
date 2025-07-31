@@ -9,31 +9,28 @@ import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYou';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { CartContext } from './Context/CartContext';
-
+import { CartProvider } from './Context/CartContext'; 
 
 function App() {
   return (
+  <CartProvider>
    <Router>
     <Header />
     <main className='min-h-screen bg-white text-black'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/produkter" element={<Products />} />
-        <Route path="/produkter/ :kategori" element={<Category />} />
-        <Route path="/produkt/ :slug" element={<ProductDetail />} />
+        <Route path="/produkter/:kategori" element={<Category />} />
+        <Route path="/produkt/:slug" element={<ProductDetail />} />
         <Route path="/kassa" element={<Checkout />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/tack" element={<ThankYou />} />
-        
-        <CartContext.Provider value={{ cart: [], setCart: () => {} }}>
-      <App />
-        </CartContext.Provider>
-      </Routes>
-    </main>
+     </Routes>
+    </main> 
     <Footer />
    </Router>
+   </CartProvider>
   )
 }
 
-export default App
+export default App;

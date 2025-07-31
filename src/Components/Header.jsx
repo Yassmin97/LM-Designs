@@ -22,12 +22,12 @@ const Header = () => {
         <header className='w-full bg-white shadow-md sticky top-8 z-50'>
             <div className='flex items-center justify-between px-4 py-3 md:px-8'>
                 <Link to="/" className='text-xl font-bold text-red-800'>
-                <img src="/logo.jpg" alt="LM Designs"  className='h-10'/>
+                <img src="/bilder/logo.jpg" alt="LM Designs"  className='h-20'/>
                 </Link>
 
                 <form onSubmit={handleSearch} className='hidden md:flex flex-1 mx-4 max-w-md'>
                     <input type="text" placeholder='Sök...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className='flex-1 border border-gray-300 rounded-1 px-4 py-2' />
-                    <button type='submit' className='bg-red-600 text-white px-4 rounded-r'>
+                    <button type='submit' className='bg-red-800 text-white px-4 rounded-r'>
                         <FaSearch />
                     </button>
                 </form>
@@ -37,7 +37,7 @@ const Header = () => {
                     <Link to="/Checkout" className='relative text-black text-xl'>
                     <FaShoppingCart />
                     {cartCount > 0 && (
-                         <span className='absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center'>
+                         <span className='absolute -top-2 -right-2 bg-red-800 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center'>
                         {cartCount}
                     </span>
                 )}
@@ -54,7 +54,7 @@ const Header = () => {
             {/* Sökfält (mobil) */}
             <form onSubmit={handleSearch} className='flex md:hidden px-4 pb-3'>
                 <input type="text" placeholder='Sök...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className='flex-1 border border-gray-300 rounded-1 px-4 py-2' />
-                <button type='submit' className='bg-red-600 text-white px-4 rounded-r'>
+                <button type='submit' className='bg-red-800 text-white px-4 rounded-r'>
                     <FaSearch />
                 </button>
             </form>

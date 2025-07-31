@@ -11,9 +11,16 @@ const produkter = [
   {
     name: "Nyckelring",
     subcategories: [
-      { name: "Nyckelring hjärta", price: 49, image: "/bilder/Nyckelring/hjarta.jpg" },
-      { name: "Nyckelring rund", price: 49, image: "/bilder/Nyckelring/rund.jpg" },
-      { name: "Nyckelring rektangulär", price: 49, image: "/bilder/Nyckelring/rektangulär.jpg" },
+      { name: "Nyckelring hjärta", price: 49, image: "/bilder/nyckelringar-med-bg/heart-black.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/heart-brown.jpg" },
+      { name: "Nyckelring rektangulär", price: 49, image: "/bilder/nyckelringar-med-bg/heart-red.jpg" },
+    {/* { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/round-white.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/round-purble.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/round-green.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-b/long-brown.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/long-white.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/long-gray.jpg" },
+      { name: "Nyckelring rund", price: 49, image: "/bilder/nyckelringar-med-bg/long-pink.jpg" },*/}
     ]
   },
   {
@@ -25,8 +32,8 @@ const produkter = [
   {
     name: "Baby",
     subcategories: [
-      { name: "Personliga bodyn kortärmad", price: 139, image: "/bilder/Baby/kortarmad.jpg" },
-      { name: "Personliga boydn långärmad", price: 149, image: "/bilder/Baby/langarmad.jpg" },
+      { name: "Personliga body kortärmad", price: 139, image: "/bilder/Baby/kortarmad.jpg" },
+      { name: "Personliga body långärmad", price: 149, image: "/bilder/Baby/langarmad.jpg" },
     ]
   },
   {
